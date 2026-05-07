@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+<!-- NAPOMENA ZA KOLEGE: Fileovi za CSS su vec linkani u html-u pa obratite pažnju na naziv css fileova (tptpstil.css) -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontaktirajte nas</title>
+    <link rel="stylesheet" href="css/tptpstil.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Početna</a></li>
+                <li><a href="sadrzaj.html">Sadržaj</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Kontaktirajte nas</h1>
+        <p>Imate li pitanja o evoluciji tehnologije ili našem projektu? Pošaljite nam poruku putem forme ispod.</p>
+<!-- Forma je rađena uz asistenciju AI.-->
+        <section id="kontakt-forma">
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Kontakt podaci</legend>
+                    
+                    <br>
+                    <label for="ime">Ime i Prezime:</label><br>
+                    <input type="text" id="ime" name="ime" placeholder="Vaše ime..." required>
+                    <br><br>
+
+                    <label for="email">E-mail adresa:</label><br>
+                    <input type="email" id="email" name="email" placeholder="ime@primjer.com" required>
+                    <br><br>
+
+                    <label for="tema">Tema poruke:</label><br>
+                    <select id="tema" name="tema">
+                        <option value="opste">Opšte informacije</option>
+                        <option value="sadrzaj">Pitanje o sadržaju stranice</option>
+                        <option value="tehnicka">Tehnička podrška</option>
+                        <option value="saradnja">Saradnja na projektu</option>
+                    </select>
+                    <br><br>
+
+                    <label for="prioritet">Prioritet poruke:</label><br>
+                    <input type="radio" id="niski" name="prioritet" value="niski" checked>
+                    <label for="niski">Niski</label>
+                    <input type="radio" id="visoki" name="prioritet" value="visoki">
+                    <label for="visoki">Visoki</label>
+                    <br><br>
+
+                    <label for="poruka">Vaša poruka:</label><br>
+                    <textarea id="poruka" name="poruka" rows="6" cols="40" placeholder="Napišite nešto..."></textarea>
+                    <br><br>
+
+                    <input type="submit" value="Pošalji poruku">
+                    <input type="reset" value="Poništi">
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <br><br>
+    <footer>
+        <p>Autori: Ilma Ibrić, Inasa Spahić, Husejn Omerčić| 2026. | Predmet: TPTP</p>
+        <p>
+            <a href="https://www.untz.ba" target="_blank">Univerzitet u Tuzli</a> | 
+            <a href="https://fet.ba" target="_blank">Fakultet elektrotehnike</a>
+        </p>
+    </footer>
+
+</body>
+</html>
