@@ -1,1 +1,342 @@
+ /*kod je rađen uz pomoc AI (goole gemiini)- AI je pomogao u  pisanju koda i poboljšanju dizajna te samom provjerom ispravnosti koda*/
+ :root {
+    --dark: #1b1b1b;
+    --accent: #b08968;
+    --accent2: hsl(21, 84%, 51%);
+    --card: #ffd47f;
 
+    --bg: #f4ecd8;
+    --text: #1b1b1b;
+}
+
+body.dark {
+    --bg: #1b1b1b;
+    --text: #f4ecd8;
+    --card: #2a2a2a;
+    --accent: #b08968;
+}
+
+
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    color: var(--dark);
+
+    background: linear-gradient(
+        135deg,
+        oklab(85.533% 0.0058 0.05983),
+        hsl(38, 64%, 63%),
+        lab(62.97% 16.51 38.03),
+        hsl(36, 92%, 48%)
+    );
+
+    transition: 0.3s ease;
+}
+
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+
+    background: radial-gradient(
+        circle,
+        transparent 60%,
+        rgba(0,0,0,0.05) 100%
+    );
+}
+
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+
+    list-style: none;
+
+    margin: 0;
+    padding: 15px;
+
+    background: var(--dark);
+}
+
+header nav a {
+    display: inline-block;
+
+    padding: 10px 18px;
+
+    border-radius: 25px;
+
+    color: #fffaf0;
+    text-decoration: none;
+
+    font-size: 16px;
+
+    transition: 0.3s ease;
+}
+
+header nav a:hover {
+    background: var(--accent);
+    color: #1b1b1b;
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+header nav a:active {
+    transform: scale(0.95);
+}
+
+/*ovaj dio koda je rađen uz asistenciju AI*/
+/*ovaj dio koda kreira stil za hero sekciju moja se nalazi na pocetnoj stranici*/
+.hero {
+    text-align: center;
+    padding: 70px 20px;
+    color: var(--dark);
+}
+
+.hero h1 {
+    font-size: 42px;
+    letter-spacing: 2px;
+}
+
+
+#galerija-sekcija {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+
+    padding: 20px;
+}
+
+
+article {
+    background: var(--card);
+
+    border: 1px solid #d6c7a1;
+
+    border-radius: 10px;
+
+    padding: 15px;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+
+    transition: 0.3s;
+}
+
+article:hover {
+    transform: translateY(-6px);
+
+    box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
+
+
+img {
+    width: 100%;
+
+    border-radius: 8px;
+
+    filter: sepia(20%) contrast(1.1);
+
+    transition: 0.3s;
+}
+
+img:hover {
+    transform: scale(1.03);
+
+    filter: sepia(0%);
+}
+
+
+main nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+main nav ul li {
+    margin: 8px 0;
+}
+
+main nav a {
+    display: inline-block;
+
+    padding: 10px 18px;
+    margin: 8px 0;
+
+    background: #1b1b1b;
+    color: #fffaf0;
+
+    text-decoration: none;
+
+    border-radius: 30px;
+
+    transition: 0.3s ease;
+}
+
+main nav a:hover {
+    background: var(--accent);
+    color: #1b1b1b;
+}
+
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    background: var(--card);
+}
+
+th {
+    background: var(--accent2);
+
+    color: white;
+
+    padding: 10px;
+}
+
+td {
+    border: 1px solid #ddd;
+
+    padding: 10px;
+}
+
+
+.contact-box {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    padding: 50px 20px;
+}
+
+form {
+    width: 100%;
+    max-width: 420px;
+
+    padding: 25px;
+
+    background: #fffaf0;
+
+    border-radius: 12px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+label {
+    display: block;
+
+    margin-top: 15px;
+
+    font-weight: bold;
+
+    color: #1b1b1b;
+}
+
+input,
+textarea {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 12px;
+
+    margin-top: 6px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #f4ecd8;
+
+    font-size: 15px;
+
+    transition: 0.3s;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+
+    box-shadow: 0 0 0 3px rgba(176,137,104,0.4);
+}
+
+/* Ovaj dio je rađen uz asistenciju AI*/
+/*u ovom djelu koda kreiramo stil dugmeta koje se nlazi u kontakt formi*/
+button {
+    width: 100%;
+
+    margin-top: 20px;
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 30px;
+
+    background: linear-gradient(
+        135deg,
+        #3a5a40,
+        #b08968
+    );
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-3px);
+
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+
+body.dark {
+    background: var(--bg);
+    color: var(--text);
+}
+
+article,
+form {
+    background: var(--card);
+    color: var(--text);
+}
+
+h1,
+h2,
+h3,
+p,
+li,
+td {
+    color: var(--text);
+}
+
+
+@media (max-width: 500px) {
+
+    #galerija-sekcija {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 200px) {
+
+    header nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #galerija-sekcija {
+        grid-template-columns: 1fr;
+    }
+}
