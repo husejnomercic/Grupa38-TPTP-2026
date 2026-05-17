@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="bs">
 <head>
-<!-- NAPOMENA ZA KOLEGE: Fileovi za CSS su vec linkani u html-u pa obratite pažnju na naziv css fileova (tptpstil.css) -->
+<!-- NAPOMENA ZA KOLEGE: Fileovi za CSS su vec linkani u html-u pa obratite pažnju na naziv css fileova (csskod.css) -->
     <meta charset="UTF-8">
     <title>Detaljan pregled era</title>
-    <link rel="stylesheet" href="css/tptpstil.css">
+    <link rel="stylesheet" href="css/csskod.css">
 </head>
 <body id="vrh"> 
     <header>
@@ -17,18 +17,22 @@
         </nav>
     </header>
 
-    <main>
+    
         <h1>Detaljni podaci o tehnološkom razvoju</h1>
+<button class="toggle-sidebar-btn">☰ Meni</button>
 
-        <nav>
-            <h3>Sadržaj stranice:</h3>
-            <ul>
-                <li><a href="#tabela-izuma">Uporedna tabela izuma</a></li>
-                <li><a href="#vrste-tehnologije">Podjela tehnologija (Lista)</a></li>
-                <li><a href="#galerija-sekcija">Galerija dostignuća</a></li>
-                <li><a href="#interaktivna-mapa">Interaktivni prikaz</a></li>
-            </ul>
-        </nav>
+<div class="wrapper">
+    <nav id="secondary-nav">
+        <button class="close-sidebar-btn">×</button>
+        <h3>Sadržaj:</h3>
+        <ul>
+            <li><a href="#tabela-izuma">Tabela izuma</a></li>
+            <li><a href="#vrste-tehnologije">Podjela (Lista)</a></li>
+            <li><a href="#galerija-sekcija">Galerija</a></li>
+            <li><a href="#interaktivna-mapa">Interaktivni prikaz</a></li>
+        </ul>
+    </nav>
+	<main>
 
         <hr>
 
@@ -155,6 +159,7 @@
 
         <p><a href="#vrh">Povratak na vrh stranice</a></p>
     </main>
+	</div>
 
     <footer>
         <p>Autori: Ilma Ibrić, Inasa Spahić, Husejn Omerčić| 2026</p>
@@ -163,5 +168,6 @@
             <a href="https://fet.ba" target="_blank">Fakultet elektrotehnike</a>
         </p>
 		</footer>
+		<script src="tptpskripte.js"></script>
 </body>
 </html>
