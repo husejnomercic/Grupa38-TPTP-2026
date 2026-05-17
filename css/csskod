@@ -505,3 +505,43 @@ body.dark #secondary-nav a:hover {
         grid-template-columns: 1fr;
     }
 }
+@media (prefers-color-scheme: dark) {
+
+    :root {
+        --bg: #1b1b1b;
+        --text: #f4ecd8;
+        --card: #2a2a2a;
+        --accent: #b08968;
+        --glow: rgba(176, 137, 104, 0.3);
+    }
+
+    body {
+        background: var(--bg);
+        color: var(--text);
+    }
+
+    article {
+        background: rgba(0, 0, 0, 0.3);
+        border-color: rgba(255,255,255,0.15);
+    }
+
+    form {
+        background: var(--card);
+    }
+
+    h1,
+    h2,
+    h3,
+    p,
+    li,
+    td,
+    label {
+        color: var(--text);
+    }
+
+    #secondary-nav {
+        background: var(--card);
+        border-right-color: var(--accent);
+    }
+}
+
